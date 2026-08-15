@@ -7,8 +7,18 @@ import logo from '../assets/logo.png';
  */
 export default function Logo({ variant = 'header' }) {
   return (
-    <Link to="/" className={`logo logo--${variant}`} aria-label="Seyon Technologies — home">
-      <img src={logo} alt="Seyon Technologies" className="logo__mark" />
+    <Link
+      to="/"
+      className={`logo logo--${variant}`}
+      aria-label="Seyon Technologies — home"
+    >
+      <img
+        src={logo}
+        alt="Seyon Technologies"
+        className="logo__mark"
+        width="150"
+        height="50"
+      />
     </Link>
   );
 }
