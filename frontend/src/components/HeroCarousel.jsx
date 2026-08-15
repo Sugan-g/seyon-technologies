@@ -22,17 +22,17 @@ const SLIDES = [
   {
     key: 'secure',
     icon: ShieldIcon,
-    eyebrow: 'AI & Cybersecurity Engineering',
+    eyebrow: 'AI • SOFTWARE • CYBERSECURITY',
     heading: (
       <>
-        Intelligent systems, built to be <span>secure by default.</span>
+        Intelligent solutions, engineered to be <span>secure by default.</span>
       </>
     ),
     body:
       'We layer AI into engineering where it genuinely helps — faster research, sharper decisions, smarter reporting — and pair every build with a cybersecurity-first approach, from VAPT to ongoing hardening.',
     stats: [
-      { value: 'AI-ready', label: 'Where it adds value' },
-      { value: 'VAPT', label: 'Web, API, network, mobile' }
+      { value: 'AI-Powered', label: 'Smarter engineering' },
+      { value: 'Security-First', label: 'Web, API, network & mobile' }
     ]
   }
 ];
@@ -94,10 +94,10 @@ export default function HeroCarousel() {
 
       <div className="hero-carousel__cta">
         <Link to="/services" className="btn btn--primary">
-          Explore Services
+          Explore Our Services
         </Link>
         <Link to="/contact" className="btn btn--outline">
-          Start a Project
+          Let's Work Together
         </Link>
       </div>
 

@@ -28,11 +28,12 @@ export default function Footer() {
       <div className="site-footer__cta page-section">
         <div className="site-footer__cta-panel">
           <div>
-            <h2>Not sure which service fits your business?</h2>
-            <p>Send us a short brief and we&rsquo;ll recommend where to start — no obligation.</p>
+            <h2>Let&rsquo;s Build the Right Solution for Your Business</h2>
+            <p>Tell us about your goals, challenges, or ideas. Our team will help you find the right technology approach.
+</p>
           </div>
           <Link to="/contact" className="btn btn--primary">
-            Start a Project &rarr;
+            Discuss Your Project &rarr;
           </Link>
         </div>
       </div>
@@ -41,9 +42,7 @@ export default function Footer() {
         <div className="site-footer__brand">
           <Logo variant="footer" />
           <p>
-            India&rsquo;s emerging technology partner for software, AI,
-            automation, and cybersecurity — engineering built around what
-            your business actually needs.
+            We help businesses transform ideas into scalable digital solutions through software, AI, automation, and cybersecurity.
           </p>
         </div>
 
@@ -69,7 +68,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3>Contact</h3>
+            <h3>GET IN TOUCH</h3>
             <ul>
               <li><a href="mailto:hello@seyontechnologies.com">hello@seyontechnologies.com</a></li>
               <li><a href="tel:+910000000000">+91 00000 00000</a></li>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import HeroCarousel from '../components/HeroCarousel.jsx';
 import PipelineCard from '../components/PipelineCard.jsx';
 import CoreValues from '../components/CoreValues.jsx';
@@ -9,6 +10,22 @@ import services from '../data/services.js';
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>Seyon Technologies | Software, AI & Cybersecurity Solutions</title>
+
+        <meta
+          name="description"
+          content="Seyon Technologies delivers secure software development, AI engineering, automation, web and API solutions, and cybersecurity services for modern businesses."
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.seyontechnologies.com/"
+        />
+      </Helmet>
+
       <section className="hero">
         <div className="hero__grid">
           <HeroCarousel />
@@ -60,17 +77,15 @@ export default function Home() {
 
         <div className="engagement__grid">
           <div className="engagement__card">
-            <h3>Project-Based</h3>
+            <h3>Project-Based Engineering</h3>
             <p>
-              A defined scope, timeline, and budget — ideal for a single
-              build, migration, or launch.
+              A defined scope, timeline, and budget — ideal for a new products, migrations, integrations, or launches.
             </p>
           </div>
           <div className="engagement__card">
-            <h3>Ongoing Partnership</h3>
+            <h3>Ongoing Engineering Partnership</h3>
             <p>
-              Continuous support across development, automation, and
-              security as your business evolves.
+              Continuous support across software development, AI integration, automation, infrastructure, and cybersecurity as your business evolves.
             </p>
           </div>
         </div>

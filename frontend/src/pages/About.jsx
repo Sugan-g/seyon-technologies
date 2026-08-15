@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+
 const PILLARS = [
   {
     index: '01',
@@ -24,6 +26,22 @@ const PILLARS = [
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About Seyon Technologies | Software & Technology Company</title>
+
+        <meta
+          name="description"
+          content="Learn about Seyon Technologies, a technology company delivering practical, intelligent, secure, and scalable software, AI, automation, and cybersecurity solutions."
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <link
+          rel="canonical"
+          href="https://www.seyontechnologies.com/about"
+        />
+      </Helmet>
+
       <section className="about page-section">
         <p className="section-eyebrow">About Seyon Technologies</p>
         <h1 className="section-heading">
@@ -42,7 +60,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="about-pillars page-section" aria-label="What we bring to every engagement">
+      <section
+        className="about-pillars page-section"
+        aria-label="What we bring to every engagement"
+      >
         <div className="about-pillars__grid">
           {PILLARS.map((pillar) => (
             <div className="about-pillars__card" key={pillar.index}>
@@ -54,7 +75,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="philosophy page-section" aria-labelledby="philosophy-heading">
+      <section
+        className="philosophy page-section"
+        aria-labelledby="philosophy-heading"
+      >
         <p className="section-eyebrow">Our Philosophy</p>
         <h2 id="philosophy-heading" className="section-heading">
           Solve the problem. Skip the complexity.
@@ -74,6 +98,7 @@ export default function About() {
               to businesses of every size.
             </p>
           </div>
+
           <div className="philosophy__card">
             <p className="section-eyebrow">Our Mission</p>
             <p className="philosophy__text">
