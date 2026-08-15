@@ -1031,7 +1031,18 @@ button {
 .contact-form textarea:focus {
   border-color: var(--blue-bright);
 }
+.contact-form select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border-color, #d1d5db);
+  border-radius: 0.5rem;
+  background: #fff;
+  font: inherit;
+}
 
+.contact-form select:focus {
+  outline: none;
+}
 .contact-form button {
   margin-top: 1.25rem;
   align-self: flex-start;
