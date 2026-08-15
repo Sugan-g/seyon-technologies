@@ -20,7 +20,7 @@ const services = [
   },
   {
     slug: 'billing-software',
-    name: 'Billing & Business Software',
+    name: 'Billing Software',
     icon: 'document',
     number: '02',
     summary:

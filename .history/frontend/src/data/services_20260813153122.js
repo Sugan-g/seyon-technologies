@@ -6,7 +6,7 @@
 const services = [
   {
     slug: 'web-development',
-    name: 'Web & Mobile Solutions',
+    name: 'Web Design & Development',
     icon: 'code',
     number: '01',
     summary:
@@ -20,7 +20,7 @@ const services = [
   },
   {
     slug: 'billing-software',
-    name: 'Billing & Business Software',
+    name: 'Billing Software',
     icon: 'document',
     number: '02',
     summary:

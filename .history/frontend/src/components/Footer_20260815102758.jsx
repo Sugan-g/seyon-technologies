@@ -59,7 +59,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3>SOLUTIONS</h3>
+            <h3>Services</h3>
             <ul>
               {services.map((service) => (
                 <li key={service.slug}>
