@@ -38,13 +38,16 @@ export default function Contact() {
     setStatus('sending');
 
     try {
-  const res = await fetch('http://localhost:5000/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(form)
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(form)
+        }
+      );
 
       if (!res.ok) {
         throw new Error('Request failed');
@@ -53,6 +56,7 @@ export default function Contact() {
       setStatus('sent');
       setForm(INITIAL_FORM);
     } catch (err) {
+      console.error('Contact form error:', err);
       setStatus('error');
     }
   };
@@ -258,3 +262,4 @@ export default function Contact() {
     </>
   );
 }
+
