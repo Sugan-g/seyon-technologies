@@ -25,6 +25,7 @@ export default function Home() {
           href="https://www.seyontechnologies.com/"
         />
 
+        {/* Organization Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -33,6 +34,16 @@ export default function Home() {
             "url": "https://www.seyontechnologies.com/",
             "logo": "https://www.seyontechnologies.com/logo.png",
             "description": "Seyon Technologies delivers secure software development, AI engineering, automation, web and API solutions, and cybersecurity services for modern businesses."
+          })}
+        </script>
+
+        {/* WebSite Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Seyon Technologies",
+            "url": "https://www.seyontechnologies.com/"
           })}
         </script>
       </Helmet>
@@ -62,10 +73,17 @@ export default function Home() {
               <span className="icon-badge" aria-hidden="true">
                 <ServiceIcon iconKey={service.icon} />
               </span>
+
               <h3>{service.name}</h3>
               <p>{service.summary}</p>
+
               <span className="capability-card__link">
-                Learn more <ArrowRightIcon width={15} height={15} strokeWidth={2.2} />
+                Learn more{' '}
+                <ArrowRightIcon
+                  width={15}
+                  height={15}
+                  strokeWidth={2.2}
+                />
               </span>
             </Link>
           ))}
@@ -82,6 +100,7 @@ export default function Home() {
 
       <section className="engagement" aria-labelledby="engagement-heading">
         <p className="section-eyebrow">How We Work</p>
+
         <h2 id="engagement-heading" className="section-heading">
           Two ways to work with us.
         </h2>
@@ -89,14 +108,20 @@ export default function Home() {
         <div className="engagement__grid">
           <div className="engagement__card">
             <h3>Project-Based Engineering</h3>
+
             <p>
-              A defined scope, timeline, and budget — ideal for a new products, migrations, integrations, or launches.
+              A defined scope, timeline, and budget — ideal for a new
+              products, migrations, integrations, or launches.
             </p>
           </div>
+
           <div className="engagement__card">
             <h3>Ongoing Engineering Partnership</h3>
+
             <p>
-              Continuous support across software development, AI integration, automation, infrastructure, and cybersecurity as your business evolves.
+              Continuous support across software development, AI
+              integration, automation, infrastructure, and cybersecurity
+              as your business evolves.
             </p>
           </div>
         </div>
