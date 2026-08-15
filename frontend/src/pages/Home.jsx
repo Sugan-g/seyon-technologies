@@ -24,6 +24,17 @@ export default function Home() {
           rel="canonical"
           href="https://www.seyontechnologies.com/"
         />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Seyon Technologies",
+            "url": "https://www.seyontechnologies.com/",
+            "logo": "https://www.seyontechnologies.com/logo.png",
+            "description": "Seyon Technologies delivers secure software development, AI engineering, automation, web and API solutions, and cybersecurity services for modern businesses."
+          })}
+        </script>
       </Helmet>
 
       <section className="hero">
