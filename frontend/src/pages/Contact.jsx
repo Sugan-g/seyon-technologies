@@ -122,9 +122,9 @@ export default function Contact() {
             <div>
               <h2>Phone &amp; Location</h2>
               <p>
-                <a href="tel:+910000000000">+91 00000 00000</a>
+                <a href="tel:+919384256306">+91 9384256306</a>
               </p>
-              <p>Chennai, Tamil Nadu, India</p>
+              <p>4/47A & 6/47B, Ram Colony, West Mambalam, Chennai-600033</p>
             </div>
 
             <div>
