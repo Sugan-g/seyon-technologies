@@ -23,16 +23,27 @@ export default function Services() {
       </Helmet>
 
       <section className="services page-section">
-        <p className="section-eyebrow">What We Do</p>
-        <h1 className="section-heading">
-          Six capabilities. One connected approach.
-        </h1>
+        <div className="media-block">
+          <img
+            src="/images/banner-ai-cybersecurity-solutions.jpg"
+            alt="Seyon Technologies AI and cybersecurity service capabilities"
+            className="media-block__img"
+            loading="lazy"
+          />
 
-        <p className="services__intro">
-          From new websites to full ERP and CRM ecosystems, every service is
-          engineered to work together — and every build can be strengthened
-          with AI where it genuinely helps.
-        </p>
+          <div className="media-block__content">
+            <p className="section-eyebrow">What We Do</p>
+            <h1 className="section-heading">
+              Six capabilities. One connected approach.
+            </h1>
+
+            <p className="services__intro">
+              From new websites to full ERP and CRM ecosystems, every service is
+              engineered to work together — and every build can be strengthened
+              with AI where it genuinely helps.
+            </p>
+          </div>
+        </div>
 
         <div className="services__list">
           {services.map((service) => (

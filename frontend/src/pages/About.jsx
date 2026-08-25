@@ -43,20 +43,31 @@ export default function About() {
       </Helmet>
 
       <section className="about page-section">
-        <p className="section-eyebrow">About Seyon Technologies</p>
-        <h1 className="section-heading">
-          Technology built around your business.
-        </h1>
+        <div className="media-block">
+          <img
+            src="/images/banner-web-development-services.jpg"
+            alt="Seyon Technologies software and web development platforms"
+            className="media-block__img"
+            loading="lazy"
+          />
 
-        <div className="about__body">
-          <p>
-            Seyon Technologies is a growing technology startup focused on
-            delivering practical, intelligent, and secure digital solutions.
-            Our capabilities span software development, business
-            applications, ERP, CRM, SEO, automation, AI, and cybersecurity
-            — for start-ups, small businesses, and growing organizations
-            looking to strengthen their digital foundation.
-          </p>
+          <div className="media-block__content">
+            <p className="section-eyebrow">About Seyon Technologies</p>
+            <h1 className="section-heading">
+              Technology built around your business.
+            </h1>
+
+            <div className="about__body">
+              <p>
+                Seyon Technologies is a growing technology startup focused on
+                delivering practical, intelligent, and secure digital solutions.
+                Our capabilities span software development, business
+                applications, ERP, CRM, SEO, automation, AI, and cybersecurity
+                — for start-ups, small businesses, and growing organizations
+                looking to strengthen their digital foundation.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import HeroCarousel from '../components/HeroCarousel.jsx';
+import BannerSlider from '../components/BannerSlider.jsx';
 import PipelineCard from '../components/PipelineCard.jsx';
 import CoreValues from '../components/CoreValues.jsx';
 import BuildGrowSecure from '../components/BuildGrowSecure.jsx';
@@ -47,6 +48,8 @@ export default function Home() {
           })}
         </script>
       </Helmet>
+
+      <BannerSlider />
 
       <section className="hero">
         <div className="hero__grid">
