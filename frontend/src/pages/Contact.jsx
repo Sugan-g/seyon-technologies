@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -22,7 +23,7 @@ const SERVICES = [
 
 export default function Contact() {
   const [form, setForm] = useState(INITIAL_FORM);
-  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+  const [status, setStatus] = useState('idle');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,11 +36,18 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     setStatus('sending');
 
     try {
+      const apiUrl = import.meta.env.VITE_API_URL;
+
+      if (!apiUrl) {
+        throw new Error('API URL is missing. Check Vercel environment variables.');
+      }
+
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/contact`,
+        `${apiUrl.replace(/\/+$/, '')}/api/contact`,
         {
           method: 'POST',
           headers: {
@@ -49,14 +57,29 @@ export default function Contact() {
         }
       );
 
+      let data;
+
+      try {
+        data = await res.json();
+      } catch {
+        throw new Error('Invalid response received from the server.');
+      }
+
+      console.log('Contact API status:', res.status);
+      console.log('Contact API response:', data);
+
       if (!res.ok) {
-        throw new Error('Request failed');
+        throw new Error(
+          data.message || `Server error: ${res.status}`
+        );
       }
 
       setStatus('sent');
       setForm(INITIAL_FORM);
+
     } catch (err) {
       console.error('Contact form error:', err);
+
       setStatus('error');
     }
   };
@@ -262,4 +285,3 @@ export default function Contact() {
     </>
   );
 }
-
