@@ -98,7 +98,7 @@ export default function Contact() {
 
         <link
           rel="canonical"
-          href="https://www.seyontechnologies.com/contact"
+          href="https://seyontechnologies.com/contact"
         />
       </Helmet>
 

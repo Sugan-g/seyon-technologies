@@ -38,7 +38,7 @@ export default function About() {
 
         <link
           rel="canonical"
-          href="https://www.seyontechnologies.com/about"
+          href="https://seyontechnologies.com/about"
         />
       </Helmet>
 

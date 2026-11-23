@@ -18,7 +18,7 @@ export default function Services() {
 
         <link
           rel="canonical"
-          href="https://www.seyontechnologies.com/services"
+          href="https://seyontechnologies.com/services"
         />
       </Helmet>
 
