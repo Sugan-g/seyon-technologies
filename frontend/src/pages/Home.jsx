@@ -23,7 +23,7 @@ export default function Home() {
 
         <link
           rel="canonical"
-          href="https://www.seyontechnologies.com/"
+           href="https://seyontechnologies.com/"
         />
 
         {/* Organization Schema */}
@@ -32,8 +32,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Seyon Technologies",
-            "url": "https://www.seyontechnologies.com/",
-            "logo": "https://www.seyontechnologies.com/logo.png",
+            "url": "https://seyontechnologies.com/",
+            "logo": "https://seyontechnologies.com/logo.png",
             "description": "Seyon Technologies delivers secure software development, AI engineering, automation, web and API solutions, and cybersecurity services for modern businesses."
           })}
         </script>
@@ -44,7 +44,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Seyon Technologies",
-            "url": "https://www.seyontechnologies.com/"
+            "url": "https://seyontechnologies.com/"
           })}
         </script>
       </Helmet>
